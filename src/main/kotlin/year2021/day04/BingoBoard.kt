@@ -1,4 +1,4 @@
-package day04
+package year2021.day04
 
 class BingoBoard(private val cols: Int, private val rows: Int) {
     private val numbers = mutableListOf<BingoNumber>()

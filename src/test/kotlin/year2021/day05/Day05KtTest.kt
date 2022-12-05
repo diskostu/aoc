@@ -1,8 +1,10 @@
-package day05
+package year2021.day05
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
+import year2021.day05.Day05
+import year2021.day05.Point
 
 internal class Day05KtTest {
 
@@ -26,7 +28,8 @@ internal class Day05KtTest {
             Point(0, 0),
             Point(1, 0),
             Point(2, 0),
-            Point(3, 0))
+            Point(3, 0)
+        )
     }
 
 
@@ -43,7 +46,8 @@ internal class Day05KtTest {
             Point(0, 0),
             Point(1, 0),
             Point(2, 0),
-            Point(3, 0))
+            Point(3, 0)
+        )
     }
 
     @Test
@@ -59,7 +63,8 @@ internal class Day05KtTest {
             Point(0, 0),
             Point(0, 1),
             Point(0, 2),
-            Point(0, 3))
+            Point(0, 3)
+        )
     }
 
     @Test
@@ -75,7 +80,8 @@ internal class Day05KtTest {
             Point(0, 0),
             Point(0, 1),
             Point(0, 2),
-            Point(0, 3))
+            Point(0, 3)
+        )
     }
 
     @Test
@@ -91,7 +97,8 @@ internal class Day05KtTest {
             Point(0, 0),
             Point(1, 1),
             Point(2, 2),
-            Point(3, 3))
+            Point(3, 3)
+        )
     }
 
     @Test
@@ -107,7 +114,8 @@ internal class Day05KtTest {
             Point(0, 0),
             Point(1, 1),
             Point(2, 2),
-            Point(3, 3))
+            Point(3, 3)
+        )
     }
 
     @Test
@@ -123,7 +131,8 @@ internal class Day05KtTest {
             Point(0, 3),
             Point(1, 2),
             Point(2, 1),
-            Point(3, 0))
+            Point(3, 0)
+        )
     }
 
     @Test
@@ -139,7 +148,8 @@ internal class Day05KtTest {
             Point(0, 3),
             Point(1, 2),
             Point(2, 1),
-            Point(3, 0))
+            Point(3, 0)
+        )
     }
 }
 

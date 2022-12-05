@@ -1,7 +1,9 @@
+package year2021
+
 import util.Utils
 
 fun main() {
-    val input = Utils().readFileAsPairStringIntList("input_day02.txt")
+    val input = Utils().readFileAsPairStringIntList("input_2021_day02.txt")
     task1(input) // 1660158
     task2(input) // 1604592846
 }
@@ -17,7 +19,7 @@ private fun task1(input: List<Pair<String, Int>>) {
         }
     }
 
-    println("task1 = ${posX * depth}")
+    println("year2021.task1 = ${posX * depth}")
 }
 
 private fun task2(input: List<Pair<String, Int>>) {
@@ -35,5 +37,5 @@ private fun task2(input: List<Pair<String, Int>>) {
         }
     }
 
-    println("task2 = ${posX * depth}")
+    println("year2021.task2 = ${posX * depth}")
 }

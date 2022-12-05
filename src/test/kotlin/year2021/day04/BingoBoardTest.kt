@@ -1,15 +1,16 @@
-package day04
+package year2021.day04
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
+import year2021.day04.BingoBoard
 
 internal class BingoBoardTest {
 
     private lateinit var board: BingoBoard
 
     @BeforeEach
-    private fun init() {
+    fun init() {
         board = BingoBoard(3, 4)
         board.addNumbersToBoard(listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12))
     }

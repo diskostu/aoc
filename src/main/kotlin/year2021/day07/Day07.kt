@@ -1,11 +1,11 @@
-package day07
+package year2021.day07
 
 import util.Utils
 import kotlin.math.absoluteValue
 
 fun main() {
     val currentDay = Day07()
-    val input = Utils().readFileAsIntListCommaSeparated("input_day07.txt")
+    val input = Utils().readFileAsIntListCommaSeparated("input_2021_day07.txt")
 
     println("task 1 = ${currentDay.calcFuelTask1(input)}")
     println("task 2 = ${currentDay.calcFuelTask2(input)}")

@@ -1,10 +1,10 @@
-package day06
+package year2021.day06
 
 import util.Utils
 
 fun main() {
     val currentDay = Day06()
-    val input = Utils().readFileAsIntListCommaSeparated("input_day06.txt")
+    val input = Utils().readFileAsIntListCommaSeparated("input_2021_day06.txt")
 
     println("task 1 = ${currentDay.simulate(input, 80)}")
     println("task 2 = ${currentDay.simulate(input, 256)}")

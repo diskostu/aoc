@@ -1,10 +1,10 @@
-package day05
+package year2021.day05
 
 import util.Utils
 
 fun main() {
     val currentDay = Day05()
-    val input = Utils().readFileAsStringList("input_day05.txt")
+    val input = Utils().readFileAsStringList("input_2021_day05.txt")
 
     val completeList = createPointPairs(input)
     val filteredList = completeList

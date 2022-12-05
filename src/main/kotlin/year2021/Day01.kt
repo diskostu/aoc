@@ -1,7 +1,9 @@
+package year2021
+
 import util.Utils
 
 fun main() {
-    val input = Utils().readFileAsIntListLineBreaks("input_day01.txt")
+    val input = Utils().readFileAsIntListLineBreaks("input_2021_day01.txt")
     task1(input) // 1766
     task2(input) // 1797
 }
@@ -13,7 +15,7 @@ private fun task1(input: List<Int>) {
         if (input[i + 1] > input[i]) depthsGreater++
     }
 
-    println("task1 = $depthsGreater")
+    println("year2021.task1 = $depthsGreater")
 }
 
 private fun task2(input: List<Int>) {
@@ -25,7 +27,7 @@ private fun task2(input: List<Int>) {
         if (tripleSum(triple2) > tripleSum(triple1)) greaterDepths++
     }
 
-    println("task2 = $greaterDepths")
+    println("year2021.task2 = $greaterDepths")
 
 }
 

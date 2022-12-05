@@ -1,7 +1,9 @@
+package year2021
+
 import util.Utils
 
 fun main() {
-    val input = Utils().readFileAsStringList("input_day03.txt")
+    val input = Utils().readFileAsStringList("input_2021_day03.txt")
     task1(input) // 749376
     task2(input) // 2372923
 }
@@ -27,14 +29,14 @@ private fun task1(input: List<String>) {
         }
     }
 
-    println("task1 = ${gamma.toInt(2) * epsilon.toInt(2)}")
+    println("year2021.task1 = ${gamma.toInt(2) * epsilon.toInt(2)}")
 }
 
 private fun task2(input: List<String>) {
     val oxygenRating = reduceList(input, true)
     val co2Rating = reduceList(input, false)
 
-    println("task2 = ${oxygenRating.toInt(2) * co2Rating.toInt(2)}")
+    println("year2021.task2 = ${oxygenRating.toInt(2) * co2Rating.toInt(2)}")
 }
 
 private fun reduceList(list: List<String>, biggerIsBetter: Boolean): String {

@@ -1,9 +1,9 @@
-package day04
+package year2021.day04
 
 import util.Utils
 
 fun main() {
-    val input = Utils().readFileAsStringList("input_day04.txt")
+    val input = Utils().readFileAsStringList("input_2021_day04.txt")
     val numbersToDraw = input[0].split(",")
     var bingoBoards = createBingoBoards(input)
     task1(numbersToDraw, bingoBoards) // 72770

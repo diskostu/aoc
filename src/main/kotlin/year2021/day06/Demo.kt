@@ -1,4 +1,4 @@
-package day06
+package year2021.day06
 
 fun main() {
     val inputList = listOf(1, 2, 3, 4, 1, 2, 3, 1, 2)
