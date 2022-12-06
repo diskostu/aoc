@@ -4,8 +4,8 @@ import java.io.File
 
 class Utils {
 
-    fun readFileAsStringList(fileName: String): List<String> =
-        File("src/main/resources/$fileName").bufferedReader().readLines()
+    fun readFileAsStringList(fileName: String, mainOrTest: String): List<String> =
+        File("src/$mainOrTest/resources/$fileName").bufferedReader().readLines()
 
     fun readLinesAsStringPairs(
         fileName: String,

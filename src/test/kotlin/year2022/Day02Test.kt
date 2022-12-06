@@ -1,7 +1,9 @@
-package year2022.day02
+package year2022
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
+import year2022.day02.task1
+import year2022.day02.task2
 
 internal class Day02Test {
 

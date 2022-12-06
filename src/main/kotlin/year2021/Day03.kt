@@ -3,7 +3,7 @@ package year2021
 import util.Utils
 
 fun main() {
-    val input = Utils().readFileAsStringList("input_2021_day03.txt")
+    val input = Utils().readFileAsStringList("input_2021_day03.txt", "main")
     task1(input) // 749376
     task2(input) // 2372923
 }
