@@ -17,6 +17,32 @@ class Utils {
             .split(",")
             .map { it.toInt() }
 
+
+    fun readFileAsIntListSeparated(
+        fileName: String,
+        mainOrTest: String,
+    ): MutableList<MutableList<Int>> {
+        val lines = File("src/$mainOrTest/resources/$fileName")
+            .bufferedReader()
+            .readLines()
+
+        val allList: MutableList<MutableList<Int>> = mutableListOf()
+        val innerList: MutableList<Int> = mutableListOf()
+
+        for (line in lines) {
+            if (line.isBlank()) {
+                allList.add(ArrayList(innerList))
+                innerList.clear()
+            } else {
+                innerList.add(line.toInt())
+            }
+        }
+
+        allList.add(ArrayList(innerList))
+
+        return allList
+    }
+
     fun readFileAsPairStringIntList(fileName: String): List<Pair<String, Int>> {
         val lines = File("src/main/resources/$fileName").bufferedReader().readLines()
         val pairList = mutableListOf<Pair<String, Int>>()
