@@ -7,6 +7,22 @@ class Utils {
     fun readFileAsStringList(fileName: String): List<String> =
         File("src/main/resources/$fileName").bufferedReader().readLines()
 
+    fun readLinesAsStringPairs(
+        fileName: String,
+        mainOrTest: String,
+    ): List<Pair<String, String>> {
+        val lines = File("src/$mainOrTest/resources/$fileName").bufferedReader().readLines()
+
+        val pairList = mutableListOf<Pair<String, String>>()
+        for (line in lines) {
+            val split = line.split(" ")
+            pairList.add(Pair(split[0], split[1]))
+        }
+
+        return pairList
+    }
+
+
     fun readFileAsIntListLineBreaks(fileName: String): List<Int> =
         File("src/main/resources/$fileName").bufferedReader().readLines().map { it.toInt() }
 
@@ -18,7 +34,7 @@ class Utils {
             .map { it.toInt() }
 
 
-    fun readFileAsIntListSeparated(
+    fun readFileAsIntListSeparatedLists(
         fileName: String,
         mainOrTest: String,
     ): MutableList<MutableList<Int>> {

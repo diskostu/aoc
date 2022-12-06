@@ -5,13 +5,16 @@ import org.junit.jupiter.api.Test
 
 internal class Day01Test {
 
+    private val filename = "input_2022_day01.txt"
+    private val mainOrTest = "test"
+
     @Test
     fun `should get correct calories sum`() {
         // given
-        val filename = "input_2022_day01.txt"
 
         // when
-        val calorieSum = task1(filename, "test")
+
+        val calorieSum = task1(filename, mainOrTest)
 
         // then
         assertThat(calorieSum).isEqualTo(24000)
@@ -20,10 +23,9 @@ internal class Day01Test {
     @Test
     fun `should get correct max three calories sum`() {
         // given
-        val filename = "input_2022_day01.txt"
 
         // when
-        val calorieSum = task2(filename, "test")
+        val calorieSum = task2(filename, mainOrTest)
 
         // then
         assertThat(calorieSum).isEqualTo(45000)
