@@ -19,7 +19,7 @@ class Day05 {
     fun task1(filename: String, mainOrTest: String): String {
         val input = Utils().readFileAsStringList(filename, mainOrTest)
 
-        val stackMap: MutableMap<Int, MutableList<String>> = createStackMap(input)
+        val stackMap: Map<Int, MutableList<String>> = createStackMap(input)
         val movesReduced = createMoves(input)
 
         for (move in movesReduced) {
@@ -40,7 +40,7 @@ class Day05 {
     fun task2(filename: String, mainOrTest: String): String {
         val input = Utils().readFileAsStringList(filename, mainOrTest)
 
-        val stackMap: MutableMap<Int, MutableList<String>> = createStackMap(input)
+        val stackMap: Map<Int, MutableList<String>> = createStackMap(input)
         val movesReduced = createMoves(input)
 
         for (move in movesReduced) {
@@ -55,7 +55,7 @@ class Day05 {
         return stackMap.toSortedMap().values.joinToString(separator = "") { it.last() }
     }
 
-    private fun createStackMap(input: List<String>): MutableMap<Int, MutableList<String>> {
+    private fun createStackMap(input: List<String>): Map<Int, MutableList<String>> {
         val stacks = input
             .filter { it.contains("[") }
 
