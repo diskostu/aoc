@@ -100,7 +100,6 @@ class Day08 {
     ): MutableList<Int> {
         val columnTreesBottom = mutableListOf<Int>()
         for (tempLineIndex in fromValue until untilValue) {
-            input[tempLineIndex]
             columnTreesBottom.add(input[tempLineIndex][treeIndex].digitToInt())
         }
 
