@@ -31,6 +31,19 @@ internal class Day01Test {
         val result = task2(list)
 
         // assert
-        assertThat(result).isEqualTo(358)
+        assertThat(result).isEqualTo(435)
+    }
+
+
+    @Test
+    fun `should get correct result for task 2 input 2`() {
+        // arrange
+        val list = Utils().readFileAsStringList("input_2023_day01_task2_input2.txt", "test")
+
+        // act
+        val result = task2(list)
+
+        // assert
+        assertThat(result).isEqualTo(99)
     }
 }

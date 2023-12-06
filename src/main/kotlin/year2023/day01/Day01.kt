@@ -2,16 +2,10 @@ package year2023.day01
 
 import util.Utils
 
-var digitMap = mapOf(
-    Pair("one", 1),
-    Pair("two", 2),
-    Pair("three", 3),
-    Pair("four", 4),
-    Pair("five", 5),
-    Pair("six", 6),
-    Pair("seven", 7),
-    Pair("eight", 8),
-    Pair("nine", 9)
+val digitMap = mapOf(
+    "zero" to 0, "one" to 1, "two" to 2, "three" to 3,
+    "four" to 4, "five" to 5, "six" to 6, "seven" to 7,
+    "eight" to 8, "nine" to 9
 )
 
 fun main() {
@@ -38,7 +32,9 @@ fun task2(list: List<String>): Int {
     for (string in list) {
         val firstDigit = getFirstDigitOrWordDigitInString(string)
         val lastDigit = getLastDigitOrWordDigitInString(string)
-        sum += "$firstDigit$lastDigit".toInt()
+        val toInt = "$firstDigit$lastDigit".toInt()
+        println("toInt = $toInt")
+        sum += toInt
     }
 
     return sum
@@ -77,7 +73,7 @@ private fun getLastDigitOrWordDigitInString(string: String): Int {
     }
 
     val lastOrNull = string.lastOrNull { it.isDigit() }
-    return if (lastOrNull != null && string.indexOf(lastOrNull) >= currentIndex) {
+    return if (lastOrNull != null && string.lastIndexOf(lastOrNull) >= currentIndex) {
         lastOrNull.digitToInt()
     } else {
         digitMap[currentDigitWord]!!
