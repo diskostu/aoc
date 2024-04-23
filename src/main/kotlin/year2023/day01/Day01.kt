@@ -46,7 +46,7 @@ private fun getFirstDigitOrWordDigitInString(string: String): Int {
     var currentDigitWord = ""
     for (digitWord in digitMap.keys) {
         val indexOf = string.indexOf(digitWord)
-        if (indexOf in 0..<currentIndex) {
+        if (indexOf in 0..currentIndex) {
             currentIndex = indexOf
             currentDigitWord = digitWord
         }
